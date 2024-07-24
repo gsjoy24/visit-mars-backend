@@ -9,4 +9,4 @@ DATABASE_URL=
 ```
 
 Install all dev dependencies with the command `npm i` or `npm install`. Now you can run the server with the command `npm run start:dev`.
-visit the `package.json` to know other commands.
+visit the file `package.json` to know other commands.
