@@ -1,4 +1,4 @@
-export interface FormData {
+export interface TVisitor {
 	fullName: string;
 	dateOfBirth: string;
 	nationality: string;
