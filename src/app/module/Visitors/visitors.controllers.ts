@@ -16,7 +16,7 @@ const createVisitor = catchAsync(async (req: Request, res: Response) => {
 });
 
 const getVisitors = catchAsync(async (req: Request, res: Response) => {
-	const result = VisitorServices.getVisitors();
+	const result = await VisitorServices.getVisitors();
 
 	sendResponse(res, {
 		success: true,
