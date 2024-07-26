@@ -9,7 +9,7 @@ const createVisitor = async (visitor: TVisitor) => {
 		email: visitor?.email
 	});
 	if (visitorExists) {
-		throw new AppError(httpStatus.CONFLICT, 'Visitor already exists');
+		throw new AppError(httpStatus.CONFLICT, 'The email is already in use. Please use another email.');
 	}
 
 	const newVisitor = await Visitor.create(visitor);
